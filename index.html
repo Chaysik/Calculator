@@ -11,6 +11,81 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	<div class="container">
+		<div id="calculator">
+			<div class="wrapper">
+				<section id="screen">
+					<h1 id='display'>
+						
+					</h1>
+				</section>
+
+				<section id="desc" class="cf">
+					<div id="from">
+						<h2>Przelicz z: </h2>
+						<form>
+							<input type="radio" name='value_from' id='value_from' value="bin"> Dwójkowy <br>
+							<input type="radio" name='value_from' id='value_from' value="oct"> Ósemkowy <br>
+							<input type="radio" name='value_from' id='value_from' value="dec"> Dziesiętny <br>
+							<input type="radio" name='value_from' id='value_from' value="hex"> Szesnastkowy <br>
+						</form>
+					</div>
+
+					<div id="to">
+						<h2>Przelicz na: </h2>
+						<form>
+							<input type="radio" name='value_to' id='value_to' value="bin"> Dwójkowy <br>
+							<input type="radio" name='value_to' id='value_to' value="oct"> Ósemkowy <br>
+							<input type="radio" name='value_to' id='value_to' value="dec"> Dziesiętny <br>
+							<input type="radio" name='value_to' id='value_to' value="hex"> Szesnastkowy <br>
+						</form>
+					</div>
+				</section>
+
+				<section id="buttons" class="cf">
+					<div id="numbers">
+						<div class="col_1_3">
+							<input type='button' class="button" value='7'>
+							<input type='button' class="button" value='4'>
+							<input type='button' class="button" value='1'>
+						</div>
+						<div class="col_1_3">
+							<input type='button' class="button" value='8'>
+							<input type='button' class="button" value='5'>
+							<input type='button' class="button" value='2'>
+							<input type='button' class="button" value='0'>
+						</div>
+						<div class="col_1_3">
+							<input type='button' class="button" value='9'>
+							<input type='button' class="button" value='6'>
+							<input type='button' class="button" value='3'>
+						</div>
+					</div>
+
+					<div id="letters">
+						<div class="col_1_2">
+							<form>
+								<input type='button' class="button" value='E'>
+								<input type='button' class="button" value='C'>
+								<input type='button' class="button" value='A'>
+							</form>
+						</div>
+						<div class="col_1_2">
+							<form>
+								<input type='button' class="button" value='F'>
+								<input type='button' class="button" value='D'>
+								<input type='button' class="button" value='B'>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<form>
+					<input type="button" class='button' id='send' value='Przelicz'>
+					<input type="button" class='button' id='clear' value='Wyczysc'>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
