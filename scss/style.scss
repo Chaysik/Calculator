@@ -11,10 +11,27 @@ $darkest_white: #e0e3da;
 
 body {
 	background: $violet;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 .button {
+	margin: 0 auto;
+	display: block;
+	padding: 1rem 0;
+	margin-bottom: 15px;
+	width: 70%;
+	background: $violet;
+	border: 0;
+	cursor: pointer;
+	font-weight: bold;
+	border-bottom: 0.5rem solid $darkest_violet;
+	border-radius: 16px;
+	text-align: center;
+	color: white;
+	font-size: 3rem; 
+}
+
+.special_button {
 	margin: 0 auto;
 	display: block;
 	padding: 1rem 0;
@@ -77,10 +94,21 @@ body {
 			margin: 0 auto;
 			#screen {
 				width: 100%;
-				height: 8rem;
+				min-height: 8rem;
 				background: $white;
 				border: 10px solid $darkest_white;
 				border-radius: 16px;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				text-align: right;
+				#display {
+					font-weight: normal;
+					padding: 0 1.5rem;
+					width: 100%;
+					max-width: 100%;
+					word-wrap: break-word;
+				}
 			}
 			#desc {
 				width: 100%;
