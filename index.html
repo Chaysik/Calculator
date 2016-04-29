@@ -24,10 +24,10 @@
 					<div id="from">
 						<h2>Przelicz z: </h2>
 						<form>
-							<input type="radio" name='value_from' id='value_from' value="bin"> Dwójkowy <br>
-							<input type="radio" name='value_from' id='value_from' value="oct"> Ósemkowy <br>
-							<input type="radio" name='value_from' id='value_from' value="dec"> Dziesiętny <br>
-							<input type="radio" name='value_from' id='value_from' value="hex"> Szesnastkowy <br>
+							<input type="radio" class='calc_from' name='value_from' id='value_from' value="bin"> Dwójkowy <br>
+							<input type="radio" class='calc_from' name='value_from' id='value_from' value="octa"> Ósemkowy <br>
+							<input type="radio" class='calc_from' name='value_from' id='value_from' value="dec"> Dziesiętny <br>
+							<input type="radio" class='calc_from' name='value_from' id='value_from' value="hexa"> Szesnastkowy <br>
 						</form>
 					</div>
 
@@ -35,9 +35,9 @@
 						<h2>Przelicz na: </h2>
 						<form>
 							<input type="radio" name='value_to' id='value_to' value="bin"> Dwójkowy <br>
-							<input type="radio" name='value_to' id='value_to' value="oct"> Ósemkowy <br>
+							<input type="radio" name='value_to' id='value_to' value="octa"> Ósemkowy <br>
 							<input type="radio" name='value_to' id='value_to' value="dec"> Dziesiętny <br>
-							<input type="radio" name='value_to' id='value_to' value="hex"> Szesnastkowy <br>
+							<input type="radio" name='value_to' id='value_to' value="hexa"> Szesnastkowy <br>
 						</form>
 					</div>
 				</section>
@@ -45,36 +45,36 @@
 				<section id="buttons" class="cf">
 					<div id="numbers">
 						<div class="col_1_3">
-							<input type='button' class="button" value='7'>
-							<input type='button' class="button" value='4'>
-							<input type='button' class="button" value='1'>
+							<input type='button' class="button octa_btn" value='7' disabled>
+							<input type='button' class="button octa_btn" value='4' disabled>
+							<input type='button' class="button bin_btn" value='1' disabled>
 						</div>
 						<div class="col_1_3">
-							<input type='button' class="button" value='8'>
-							<input type='button' class="button" value='5'>
-							<input type='button' class="button" value='2'>
-							<input type='button' class="button" value='0'>
+							<input type='button' class="button dec_btn" value='8' disabled>
+							<input type='button' class="button octa_btn" value='5' disabled>
+							<input type='button' class="button octa_btn" value='2' disabled>
+							<input type='button' class="button bin_btn" value='0' disabled>
 						</div>
 						<div class="col_1_3">
-							<input type='button' class="button" value='9'>
-							<input type='button' class="button" value='6'>
-							<input type='button' class="button" value='3'>
+							<input type='button' class="button dec_btn" value='9' disabled>
+							<input type='button' class="button octa_btn" value='6' disabled>
+							<input type='button' class="button octa_btn" value='3' disabled>
 						</div>
 					</div>
 
 					<div id="letters">
 						<div class="col_1_2">
 							<form>
-								<input type='button' class="button" value='E'>
-								<input type='button' class="button" value='C'>
-								<input type='button' class="button" value='A'>
+								<input type='button' class="button hexa_btn" value='E' disabled>
+								<input type='button' class="button hexa_btn" value='C' disabled>
+								<input type='button' class="button hexa_btn" value='A' disabled>
 							</form>
 						</div>
 						<div class="col_1_2">
 							<form>
-								<input type='button' class="button" value='F'>
-								<input type='button' class="button" value='D'>
-								<input type='button' class="button" value='B'>
+								<input type='button' class="button hexa_btn" value='F' disabled>
+								<input type='button' class="button hexa_btn" value='D' disabled>
+								<input type='button' class="button hexa_btn" value='B' disabled>
 							</form>
 						</div>
 					</div>
