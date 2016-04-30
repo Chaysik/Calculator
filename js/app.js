@@ -1,16 +1,16 @@
-window.onload = initAll;
-
 var input = '';
-var result = false;
 var display_handle = document.getElementById('display');
 var bin_btns = document.getElementsByClassName('bin_btn');
 var octa_btns = document.getElementsByClassName('octa_btn');
 var dec_btns = document.getElementsByClassName('dec_btn');
 var hexa_btns = document.getElementsByClassName('hexa_btn');
+var radio_buttons = document.getElementsByClassName('calc_from');
 
-
+window.onload = initAll;
 
 function initAll() {
+
+	reset_calculator(radio_buttons);
 
 	/*Funkcja odpowiadajaca za pobieranie wartosci z przyciskow i wypisywanie na ekranie kalkulatora*/
 	var input_buttons = document.getElementsByClassName('button');
@@ -23,7 +23,6 @@ function initAll() {
 	/*Koniec funkcji pobierajacej*/
 
 	/*Funkcja odpowiadajaca za zmiane systemu*/
-	var radio_buttons = document.getElementsByClassName('calc_from');
 	for (var i = 0; i<radio_buttons.length; i++) {
 		radio_buttons[i].onclick = function() {
 			clear_display();
@@ -62,15 +61,30 @@ function initAll() {
 /*Koniec initAll()*/
 }
 
+function reset_calculator(buttons) {
+	for (var i = 0; i < buttons.length ; i++) {
+		buttons[i].checked = false;
+	}
+
+	add_disabled(bin_btns);
+	add_disabled(octa_btns);
+	add_disabled(dec_btns);
+	add_disabled(hexa_btns);
+}
+
 function remove_disabled(btns_name) {
-	for (var j = 0; j < btns_name.length; j++) {
-		btns_name[j].removeAttribute('disabled');
+	for (var i = 0; i < btns_name.length; i++) {
+		btns_name[i].removeAttribute('disabled');
+		btns_name[i].style.background = '#a593e0';
+		btns_name[i].style.cursor = 'pointer';
 	}
 }
 
 function add_disabled(btns_name) {
-	for (var k = 0; k < btns_name.length; k++) {
-		btns_name[k].setAttribute('disabled', 'disabled');
+	for (var i = 0; i < btns_name.length; i++) {
+		btns_name[i].setAttribute('disabled', 'disabled');
+		btns_name[i].style.background = '#544b74';
+		btns_name[i].style.cursor = 'default';
 	}
 }
 
